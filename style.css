@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.first{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.724)), url(./porche.car.jpg);
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+.logo{
+    width: 120px;
+    margin-top: 25px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+ul li a:hover{
+    color: red;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+}
+.content h1{
+    color: white;
+    margin: 25px;
+}
+.content p{
+    color: white;
+    margin: 25px;
+}
+.content button{
+    width: 200px;
+    padding: 15px 0px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.content button:hover{
+    color: white;
+    background-color: red;
+    border: 1 px solid red;
+    border-top-right-radius: 0px;
+    transition: all 0.3s;
+}
+.second{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.527)), url(./porchesec.car.jpg);
+    background-size: cover
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+}
+ .card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  padding-top: 20px;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(135deg, #000000, #9e1b32, #d4af37);
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  transition: transform 0.4s ease;
+  display: flex;
+}
+.card:hover {
+  transform: scale(1.08);
+}
+.card {
+    transform: translateX(100vw); /* Slide from off the right edge of the screen */
+    opacity: 0;
+    animation: slideIn 2s forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 1s;
+}
+.card:nth-child(2) {
+    animation-delay: 2s;
+}
+.card:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
