@@ -5,11 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Porche.web</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    .first {
+      height: 100vh;
+      background: url("https://cdn.pixabay.com/photo/2021/07/29/08/55/porsche-9107614_1280.jpg") no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav .logo {
+      width: 120px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f7c50f;
+    }
+
+    .content {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .content button {
+      padding: 12px 25px;
+      margin: 0 10px;
+      background-color: #f7c50f;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .content button:hover {
+      background-color: #fff;
+    }
+
+    .second {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      background-color: #111;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #222;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h2, .card h3 {
+      margin-bottom: 10px;
+      color: #f7c50f;
+    }
+
+    .card p, .card i {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
 <body>
+
   <section class="first">
     <nav>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Porsche_logo.svg/1024px-Porsche_logo.svg.png" class="logo" alt="Logo" />
+      <img src="https://avatars.mds.yandex.net/i?id=01ee368a0101311cf1b8cbd6f1a94f13_l-4055449-images-thumbs&n=13" class="logo" alt="Logo" />
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -26,24 +148,26 @@
   </section>
 
   <section class="second">
-    <div class="card showcase card1">
+    <div class="card card1">
       <img src="https://avatars.mds.yandex.net/i?id=de165f5f82b5c7c2a58b8a11080df707_l-4881086-images-thumbs&n=13" alt="Porsche 911 Turbo" />
       <h2>Porsche 911 Turbo</h2>
       <p>Top speed: 320 km/h. Designed for perfection.</p>
     </div>
 
-    <div class="card quote card2">
+    <div class="card card2">
       <img src="https://avatars.mds.yandex.net/i?id=e228cf13fbbeb2a028890ef0419e013f_l-5378083-images-thumbs&n=13" alt="Quote Image" />
       <i>“It’s not just a car. It’s a statement.”</i>
       <p>— A Porsche owner</p>
     </div>
 
-    <div class="card history card3">
+    <div class="card card3">
       <img src="https://avatars.mds.yandex.net/i?id=b7f1b804d67d5d91f253487634aa9bc5_l-3696823-images-thumbs&n=13" alt="Porsche History" />
       <h3>Since 1948</h3>
       <p>Porsche has been pushing boundaries for over 75 years. A legacy of excellence continues.</p>
     </div>
   </section>
+
 </body>
 </html>
+
 
